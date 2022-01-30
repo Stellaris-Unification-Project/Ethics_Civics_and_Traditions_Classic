@@ -254,9 +254,9 @@ miner = {
 		is_being_assimilated = no
 	}
 
+	possible_precalc = can_fill_worker_job
 	possible = {
 		hidden_trigger = { exists = owner }
-		worker_job_check_trigger = yes
 		owner = { 
 			is_gestalt = no
 			is_fallen_empire_spiritualist = no
@@ -367,8 +367,9 @@ crystal_miner = {
 		is_being_assimilated = no
 	}
 
+	possible_precalc = can_fill_worker_job
+
 	possible = {
-		worker_job_check_trigger = yes
 		owner = { is_gestalt = no }
 	}
 
@@ -456,9 +457,10 @@ gas_extractor = {
 		is_being_assimilated = no
 	}
 
+	possible_precalc = can_fill_worker_job
+
 	possible = {
-		worker_job_check_trigger = yes
-	}
+		}
 	
 	resources = {
 		category = planet_miners
@@ -544,9 +546,10 @@ mote_harvester = {
 		is_being_assimilated = no
 	}
 
+	possible_precalc = can_fill_worker_job
+
 	possible = {
-		worker_job_check_trigger = yes
-	}
+		}
 	
 	resources = {
 		category = planet_miners
@@ -632,9 +635,9 @@ farmer = {
 		is_being_assimilated = no
 	}
 
+	possible_precalc = can_fill_worker_job
 	possible = {
 		hidden_trigger = { exists = owner }
-		worker_job_check_trigger = yes
 		owner = { 
 			is_gestalt = no
 			is_fallen_empire_spiritualist = no
@@ -840,8 +843,9 @@ soldier = {
 		is_being_assimilated = no
 	}
 
+	possible_precalc = can_fill_worker_job
+
 	possible = {
-		worker_job_check_trigger = yes
 		owner = { is_gestalt = no }
 	}
 	

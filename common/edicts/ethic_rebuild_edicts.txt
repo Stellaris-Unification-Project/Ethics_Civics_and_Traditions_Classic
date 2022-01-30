@@ -128,11 +128,8 @@ diversity_utopia = {
 	
 	
 	allow = {
- 	has_non_swapped_tradition = tr_diplomacy_diversity_utopia	
-		NOR = { 
-		       has_ethic = ethic_xenophobe
-			   has_ethic = ethic_fanatic_xenophobe
-		}	       		
+ 	has_active_tradition = tr_diplomacy_diversity_utopia	
+		is_xenophobe = no	       		
 	}
 	
 		ai_weight = {
@@ -172,11 +169,8 @@ pan_galactic_league = {
 	
 	
 	allow = {
-	        has_non_swapped_tradition = tr_diplomacy_diversity_utopia 
-		NOR = { 
-		       has_ethic = ethic_xenophobe
-			   has_ethic = ethic_fanatic_xenophobe
-		}	     		
+	        has_active_tradition = tr_diplomacy_diversity_utopia 
+		is_xenophobe = no	     		
 	}
 	
 		ai_weight = {
@@ -209,11 +203,8 @@ pan_galactic_nation = {
 	
 	
 	allow = {
-       		has_non_swapped_tradition = tr_diplomacy_diversity_utopia
-			NOR = { 
-		       has_ethic = ethic_xenophobe
-			   has_ethic = ethic_fanatic_xenophobe
-		}	
+       		has_active_tradition = tr_diplomacy_diversity_utopia
+			is_xenophobe = no	
 	}
 	
 		ai_weight = {

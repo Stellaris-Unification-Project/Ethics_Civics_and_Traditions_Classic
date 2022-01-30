@@ -272,9 +272,9 @@ mercenary = {
 		trade_value_add = 1
 	}
 	
+	possible_precalc = can_fill_worker_job
 	possible = {
 		hidden_trigger = { exists = owner }
-		worker_job_check_trigger = yes
 		owner = { is_gestalt = no }
 	}
 	
@@ -620,9 +620,10 @@ commandante = {
 		is_being_assimilated = no
 	}
 	
+	possible_precalc = can_fill_ruler_job
+	
 	possible = {
-		ruler_job_check_trigger = yes
-	}
+		}
 	
 	country_modifier = {
 		country_naval_cap_add = 3
@@ -689,9 +690,10 @@ supervisor = {
 		is_being_assimilated = no
 	}
 	
+	possible_precalc = can_fill_ruler_job
+	
 	possible = {
-		ruler_job_check_trigger = yes
-	}
+		}
 	
 	resources = {
 		category = planet_administrators
@@ -757,9 +759,10 @@ mining_engineer = {
 		is_being_assimilated = no
 	}
 	
+	possible_precalc = can_fill_specialist_job
+	
 	possible = {
-		specialist_job_check_trigger = yes
-	}
+		}
 	
 	planet_modifier = {
 		planet_miners_minerals_produces_mult = 0.05
@@ -845,9 +848,10 @@ mogul = {
 		is_being_assimilated = no
 	}
 	
+	possible_precalc = can_fill_ruler_job
+	
 	possible = {
-		ruler_job_check_trigger = yes
-	}
+		}
 	
 	planet_modifier = {
 		planet_amenities_add = 7

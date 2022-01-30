@@ -24,18 +24,12 @@ tr_hierarchy_adopt = {
 		
 		modifier = {
 			factor = 0.5
-			OR = {
-			has_ethic = ethic_egalitarian
-			has_ethic = ethic_fanatic_egalitarian
-			}
+		is_egalitarian = yes
 		}		
 		
 		modifier = {
 			factor = 1.5
-			OR = {
-			has_ethic = ethic_authoritarian
-			has_ethic = ethic_fanatic_authoritarian
-			}			
+		is_authoritarian = yes			
 		}
 		
 	}
@@ -140,10 +134,7 @@ tr_hierarchy_rule_of_power = {
 	possible = {
 		has_tradition = tr_hierarchy_ideology
 		has_tradition = tr_hierarchy_strategic_taxation	
- 			NOR = {
-			has_ethic = ethic_egalitarian
-			has_ethic = ethic_fanatic_egalitarian
-			}        		
+ 			is_egalitarian = no        		
 	}
 	modifier = {
 

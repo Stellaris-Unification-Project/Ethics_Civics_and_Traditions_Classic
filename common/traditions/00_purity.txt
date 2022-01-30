@@ -34,18 +34,12 @@ possible = {
 
 		modifier = {
 			factor = 0.5
-			OR = {
-			has_ethic = ethic_xenophile
-			has_ethic = ethic_fanatic_xenophile
-			}
+		is_xenophile = yes
 		}		
 		
 		modifier = {
 			factor = 1.25
-			OR = {
-			has_ethic = ethic_xenophobe
-			has_ethic = ethic_fanatic_xenophobe
-			}			
+		is_xenophobe = yes			
 		}
 	
 			
@@ -150,10 +144,7 @@ tr_purity_chosen_ones = {
 	possible = {		
         has_tradition = tr_purity_keepers_tradition
         has_tradition = tr_purity_call_gods	
-		NOR = {
-			has_ethic = ethic_xenophile
-			has_ethic = ethic_fanatic_xenophile
-			}		
+		is_xenophile = no		
 	}
 	
 	modifier = {		

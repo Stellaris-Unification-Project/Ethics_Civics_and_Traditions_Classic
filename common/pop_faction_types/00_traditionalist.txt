@@ -37,10 +37,7 @@ traditionalist = {
 		is_being_purged = no
 		has_culture_shock = no
 		NOT = { has_trait = trait_nerve_stapled }
-		OR = {
-			has_ethic = ethic_spiritualist
-			has_ethic = ethic_fanatic_spiritualist
-		}
+		is_spiritualist = yes
 		is_robot_pop = no
 	}
 	
@@ -115,8 +112,10 @@ traditionalist = {
 			exists = owner
 			owner = {
 				can_set_ai_policy = yes
-				NOT = { has_policy_flag = ai_full_rights }
-				NOT = { has_valid_civic = civic_machine_cult }
+				NOR = {
+					has_policy_flag = ai_full_rights
+					has_valid_civic = civic_machine_cult
+				}
 			}
 		}
 

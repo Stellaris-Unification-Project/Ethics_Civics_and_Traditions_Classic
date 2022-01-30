@@ -421,10 +421,7 @@ enslavement_rate = {
 		AI_weight = {
 		      modifier = {
 				factor = 20
-				OR = {
-				has_ethic = "ethic_authoritarian"
-				has_ethic = "ethic_fanatic_authoritarian"
-			    }	
+			is_authoritarian = yes	
 			}	 
 		}
 	}		
@@ -607,10 +604,7 @@ bureaucracy = {
 								
 			modifier = {
 				factor = 10
-				OR = {
-				has_ethic = "ethic_egalitarian"
-				has_ethic = "ethic_fanatic_egalitarian"
-			    }	
+			is_egalitarian = yes	
 			           }						
 
 	           }	
@@ -663,7 +657,7 @@ healthcare = {
 			NOR = {
 				has_ethic = "ethic_fanatic_socialism"
 				has_valid_civic = civic_welfare_state
-				has_non_swapped_tradition = tr_commonwealth_healthcare
+				has_active_tradition = tr_commonwealth_healthcare
 			}				
 		}		
 		
@@ -704,7 +698,7 @@ healthcare = {
 			NOR = {
 
 				has_ethic = "ethic_fanatic_capitalism"
-				has_non_swapped_tradition = tr_commerce_healthcare
+				has_active_tradition = tr_commerce_healthcare
 			}		
 		}		
 		
@@ -778,7 +772,7 @@ education = {
 				has_ethic = "ethic_fanatic_pluralist"
 				has_valid_civic = civic_welfare_state
 				has_valid_civic = civic_shared_burden
-				has_non_swapped_tradition = tr_environmentalism_agri
+				has_active_tradition = tr_environmentalism_agri
 			}			
 		}		
 		
@@ -823,7 +817,7 @@ education = {
 		valid = {
 			NOR = {
 				has_ethic = "ethic_fanatic_elitist"
-				has_non_swapped_tradition = tr_development_land_planning
+				has_active_tradition = tr_development_land_planning
 			}		
 		}		
 		
@@ -1052,7 +1046,7 @@ transportation_logistics = {
 		
 		valid = {
 		is_country_type = default
-		nor = { has_non_swapped_tradition = tr_anarchy_transtellar }
+		nor = { has_active_tradition = tr_anarchy_transtellar }
 		}		
 		
 		modifier = {
@@ -1340,7 +1334,7 @@ interstellar_telecom = {
 		
 		valid = {
 		is_country_type = default
-		nor = { has_non_swapped_tradition = tr_anarchy_freedom_thought }
+		nor = { has_active_tradition = tr_anarchy_freedom_thought }
 		}			
 		
 		modifier = {
@@ -1422,7 +1416,7 @@ interstellar_media = {
 				has_ethic = ethic_fanatic_authoritarian
 				has_valid_civic = civic_divine_order
 				has_valid_civic = civic_ultimate_collective
-				has_non_swapped_tradition = tr_hierarchy_ideology
+				has_active_tradition = tr_hierarchy_ideology
 			}		
 		}			
 		
@@ -1472,7 +1466,7 @@ interstellar_media = {
 				has_ethic = ethic_fanatic_egalitarian
 				has_valid_civic = civic_beacon_of_liberty
 				has_valid_civic = civic_political_pluralism
-				has_non_swapped_tradition = tr_anarchy_freedom_of_speech
+				has_active_tradition = tr_anarchy_freedom_of_speech
 			}		
 		}			
 		
@@ -1510,8 +1504,7 @@ war_philosophy = {
 	potential = {
 		OR = {
 			is_country_type = default
-			is_country_type = fallen_empire
-			is_country_type = awakened_fallen_empire
+			is_fallen_empire = yes
 		}
 	}
 	
@@ -1528,8 +1521,7 @@ war_philosophy = {
 		
 		valid = {
 			NOR = {
-				has_ethic = "ethic_pacifist"
-				has_ethic = "ethic_fanatic_pacifist"
+				is_pacifist = yes
 				has_valid_civic = "civic_inwards_perfection"
 				has_valid_civic = "civic_xeno_militarist"
 			}
@@ -1542,10 +1534,7 @@ war_philosophy = {
 					has_valid_ai_personality = no
 					is_ai = no
 				}
-				NOT = {
-					has_ethic = "ethic_pacifist"
-					has_ethic = "ethic_fanatic_pacifist"
-				}
+				is_pacifist = no
 			}
 			modifier = {
 				factor = 10
@@ -1559,10 +1548,7 @@ war_philosophy = {
 			}
 			modifier = {
 				factor = 0
-				OR = {
-					has_ethic = "ethic_pacifist"
-					has_ethic = "ethic_fanatic_pacifist"
-				}
+				is_pacifist = yes
 			}
 		}
 	}
@@ -1633,9 +1619,7 @@ war_philosophy = {
 		valid = {
 			NOR = {
 				has_ethic = "ethic_fanatic_militarist"
-				has_valid_civic = "civic_fanatic_purifiers"
-				has_valid_civic = "civic_hive_devouring_swarm"
-				has_valid_civic = "civic_machine_terminator"
+				is_homicidal = yes
 			}
 		}
 		
@@ -1673,10 +1657,7 @@ orbital_bombardment = {
 		AI_weight = {
 			modifier = {
 				factor = 0
-				NOR = {
-					has_ethic = "ethic_pacifist"
-					has_ethic = "ethic_fanatic_pacifist"
-				}
+				is_pacifist = no
 			}
 		}
 	}
@@ -1690,8 +1671,7 @@ orbital_bombardment = {
 		
 		valid = {
 			NOR = {	
-				has_ethic = "ethic_pacifist" 
-				has_ethic = "ethic_fanatic_pacifist" 
+				is_pacifist = yes 
 				has_valid_civic = "civic_xeno_militarist"
 			}
 		}
@@ -1822,10 +1802,7 @@ resettlement = {
 			factor = 10
 			modifier = {
 				factor = 0
-				OR = {
-					has_ethic = ethic_egalitarian 
-					has_ethic = ethic_fanatic_egalitarian
-				}
+				is_egalitarian = yes
 			}
 		}
 	}
@@ -1874,10 +1851,8 @@ population_controls = {
 			modifier = {
 				factor = 0
 				OR = {
-					has_ethic = ethic_egalitarian
-					has_ethic = ethic_fanatic_egalitarian
-					has_ethic = ethic_xenophile
-					has_ethic = ethic_fanatic_xenophile
+					is_egalitarian = yes
+					is_xenophile = yes
 				}
 			}			
 		}
@@ -2035,8 +2010,7 @@ artificial_intelligence_policy = {
 
 		valid = {
 			NOR = {
-				has_ethic = "ethic_materialist"
-				has_ethic = "ethic_fanatic_materialist"
+				is_materialist = yes
 				has_valid_civic = civic_machine_cult
 
 			}			
@@ -2049,17 +2023,11 @@ artificial_intelligence_policy = {
 		AI_weight = {
 			modifier = {
 				factor = 0
-				OR = {
-					has_ethic = "ethic_materialist"
-					has_ethic = "ethic_fanatic_materialist"
-				}
+				is_materialist = yes
 			}
 			modifier = {
 				factor = 5
-				OR = {
-					has_ethic = "ethic_spiritualist"
-					has_ethic = "ethic_fanatic_spiritualist"
-				}
+				is_spiritualist = yes
 			}
 		}
 	}
@@ -2088,10 +2056,7 @@ artificial_intelligence_policy = {
 			}				
 			modifier = {
 				factor = 0
-				OR = {
-					has_ethic = "ethic_spiritualist"
-					has_ethic = "ethic_fanatic_spiritualist"
-				}
+				is_spiritualist = yes
 				not = { has_valid_civic = civic_machine_cult }
 			}
 		}
@@ -2102,10 +2067,7 @@ artificial_intelligence_policy = {
 
 		valid = {
 		  or = {
-			NOR = {
-				has_ethic = "ethic_spiritualist"
-				has_ethic = "ethic_fanatic_spiritualist"
-			}
+			is_spiritualist = no
 			has_valid_civic = civic_machine_cult
 		  }
 			NOT = { has_policy_flag = robots_outlawed }
@@ -2129,10 +2091,7 @@ artificial_intelligence_policy = {
 			}		
 			modifier = {
 				factor = 0
-				OR = {
-					has_ethic = "ethic_spiritualist"
-					has_ethic = "ethic_fanatic_spiritualist"
-				}
+				is_spiritualist = yes
 			}
 		}
 	}
@@ -2149,11 +2108,10 @@ robot_pop_policy = {
 
 		valid = {
 			NOR = {
-				has_ethic = "ethic_materialist"
-				has_ethic = "ethic_fanatic_materialist"
+				is_materialist = yes
 				has_valid_civic = civic_machine_cult
-			}				
-			NOT = { has_policy_flag = ai_full_rights }
+				has_policy_flag = ai_full_rights
+			}
 		}
 		
 		policy_flags = {
@@ -2164,10 +2122,7 @@ robot_pop_policy = {
 			factor = 1
 			modifier = {
 				factor = 0
-				OR = {
-					has_ethic = "ethic_materialist"
-					has_ethic = "ethic_fanatic_materialist"
-				}
+				is_materialist = yes
 			}
 			modifier = {
 				factor = 10
@@ -2236,8 +2191,7 @@ slavery = {
 				has_ethic = ethic_fanatic_elitist		
 				has_valid_civic = civic_slaver_guilds
 				has_valid_civic = civic_reeducated_labor
-				has_ethic = ethic_xenophobe
-				has_ethic = ethic_fanatic_xenophobe
+				is_xenophobe = yes
 			}
 		}
 		
@@ -2259,8 +2213,7 @@ slavery = {
 				NOR = {
 					has_ethic = ethic_elitist
 					has_ethic = ethic_fanatic_elitist
-					has_ethic = ethic_xenophobe
-					has_ethic = ethic_fanatic_xenophobe
+					is_xenophobe = yes
 				}
 			}
 			# special case for harmonious collectives
@@ -2269,16 +2222,12 @@ slavery = {
 				has_valid_ai_personality = no
 				is_ai = yes
 				NOR = {
-					has_ethic = "ethic_xenophobe"
-					has_ethic = "ethic_fanatic_xenophobe"
-					has_ethic = "ethic_militarist"
-					has_ethic = "ethic_fanatic_militarist"	
+					is_xenophobe = yes
+					is_militarist = yes	
 				}
 				OR = {
-					has_ethic = "ethic_pacifist"
-					has_ethic = "ethic_fanatic_pacifist"
-					has_ethic = "ethic_xenophile"
-					has_ethic = "ethic_fanatic_xenophile"
+					is_pacifist = yes
+					is_xenophile = yes
 				}
 				OR = {
 					has_ethic = "ethic_elitist"
@@ -2311,9 +2260,7 @@ border_policy = {
 		valid = {
 			is_country_type = default
 			NOR = {
-				has_valid_civic = civic_machine_terminator
-				has_valid_civic = civic_hive_devouring_swarm
-				has_valid_civic = civic_fanatic_purifiers
+				is_homicidal = yes
 				has_valid_civic = civic_isolationism
 			}		
 		}
@@ -2344,10 +2291,7 @@ border_policy = {
 			modifier = {
 				factor = 0
 				has_valid_ai_personality = no
-				NOR = { 
-					has_ethic = ethic_xenophobe
-					has_ethic = ethic_fanatic_xenophobe
-				}
+				is_xenophobe = no
 			}			
 		}
 	}

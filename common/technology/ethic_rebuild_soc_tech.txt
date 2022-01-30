@@ -73,9 +73,8 @@ tech_holographic_rituals = {
 	
 	potential = {
 		OR = {
-			has_ethic = ethic_spiritualist
-			has_ethic = ethic_fanatic_spiritualist	
-            has_non_swapped_tradition = tr_ascension_adopt			
+			is_spiritualist = yes	
+            has_active_tradition = tr_ascension_adopt			
 		}
 	}
 	
@@ -118,9 +117,8 @@ tech_consecration_fields = {
 	
 	potential = {
 		OR = {
-			has_ethic = ethic_spiritualist
-			has_ethic = ethic_fanatic_spiritualist	
-            has_non_swapped_tradition = tr_ascension_adopt			
+			is_spiritualist = yes	
+            has_active_tradition = tr_ascension_adopt			
 		}
 	}
 	
@@ -155,9 +153,8 @@ tech_transcendent_faith = {
 	
 	potential = {
 		OR = {
-			has_ethic = ethic_spiritualist
-			has_ethic = ethic_fanatic_spiritualist
-            has_non_swapped_tradition = tr_ascension_adopt			
+			is_spiritualist = yes
+            has_active_tradition = tr_ascension_adopt			
 		}
 	}
 	
@@ -209,7 +206,7 @@ tech_psionic_theory = {
 		
 		modifier = {
 			factor = 10
-			has_non_swapped_tradition = tr_ascension_path_unity
+			has_active_tradition = tr_ascension_path_unity
 		}
 		
 		modifier = {
@@ -279,10 +276,7 @@ tech_psionic_theory = {
 		factor = 5 #very rare tech
 		modifier = {
 			factor = 1.5
-			OR = {
-				has_ethic = ethic_spiritualist
-				has_ethic = ethic_fanatic_spiritualist
-			}
+			is_spiritualist = yes
 		}
 		modifier = {
 			factor = 1.25
@@ -318,7 +312,7 @@ tech_mountain_range = {
 		}
 		modifier = {
 			factor = 1.25
-			has_non_swapped_tradition = tr_expansion_adopt
+			has_active_tradition = tr_expansion_adopt
 		}
 		modifier = {
 			factor = 4
@@ -401,7 +395,7 @@ tech_volcano = {
 		}
 		modifier = {
 			factor = 1.25
-			has_non_swapped_tradition = tr_expansion_adopt
+			has_active_tradition = tr_expansion_adopt
 		}
 		modifier = {
 			factor = 4
@@ -485,7 +479,7 @@ tech_dangerous_wildlife = {
 		}
 		modifier = {
 			factor = 1.25
-			has_non_swapped_tradition = tr_expansion_adopt
+			has_active_tradition = tr_expansion_adopt
 		}
 		modifier = {
 			factor = 4
@@ -568,7 +562,7 @@ tech_dense_jungle = {
 		}
 		modifier = {
 			factor = 1.25
-			has_non_swapped_tradition = tr_expansion_adopt
+			has_active_tradition = tr_expansion_adopt
 		}
 		modifier = {
 			factor = 4
@@ -652,7 +646,7 @@ tech_quicksand_basin = {
 		}
 		modifier = {
 			factor = 1.25
-			has_non_swapped_tradition = tr_expansion_adopt
+			has_active_tradition = tr_expansion_adopt
 		}
 		modifier = {
 			factor = 4
@@ -736,7 +730,7 @@ tech_noxious_swamp = {
 		}
 		modifier = {
 			factor = 1.25
-			has_non_swapped_tradition = tr_expansion_adopt
+			has_active_tradition = tr_expansion_adopt
 		}
 		modifier = {
 			factor = 4
@@ -820,7 +814,7 @@ tech_massive_glacier = {
 		}
 		modifier = {
 			factor = 1.25
-			has_non_swapped_tradition = tr_expansion_adopt
+			has_active_tradition = tr_expansion_adopt
 		}
 		modifier = {
 			factor = 4
@@ -904,7 +898,7 @@ tech_toxic_kelp = {
 		}
 		modifier = {
 			factor = 1.25
-			has_non_swapped_tradition = tr_expansion_adopt
+			has_active_tradition = tr_expansion_adopt
 		}
 		modifier = {
 			factor = 4
@@ -988,7 +982,7 @@ tech_deep_sinkhole = {
 		}
 		modifier = {
 			factor = 1.25
-			has_non_swapped_tradition = tr_expansion_adopt
+			has_active_tradition = tr_expansion_adopt
 		}
 		modifier = {
 			factor = 4
@@ -1094,7 +1088,7 @@ tech_space_trading = {
 		}
 		modifier = {
 			factor = 1.25
-			has_non_swapped_tradition = tr_prosperity_adopt
+			has_active_tradition = tr_prosperity_adopt
 		}
 	}
 	
@@ -1144,7 +1138,7 @@ tech_interstellar_economics = {
 		}
 		modifier = {
 			factor = 1.25
-			has_non_swapped_tradition = tr_prosperity_adopt
+			has_active_tradition = tr_prosperity_adopt
 		}
 	}
 	
@@ -1187,11 +1181,11 @@ tech_free_market = {
 		}
 		modifier = {
 			factor = 1.25
-			has_non_swapped_tradition = tr_prosperity_adopt
+			has_active_tradition = tr_prosperity_adopt
 		}
 		modifier = {
 			factor = 1.25
-			has_non_swapped_tradition = tr_prosperity_adopt
+			has_active_tradition = tr_prosperity_adopt
 		}
 
 		modifier = {
@@ -1242,7 +1236,7 @@ tech_planned_economy = {
 		}
 		modifier = {
 			factor = 1.25
-			has_non_swapped_tradition = tr_prosperity_adopt
+			has_active_tradition = tr_prosperity_adopt
 		}
 		
 		modifier = {
@@ -1293,7 +1287,7 @@ tech_innovations = {
 		}
 		modifier = {
 			factor = 1.25
-			has_non_swapped_tradition = tr_prosperity_adopt
+			has_active_tradition = tr_prosperity_adopt
 		}
 		
 		modifier = {	
@@ -1347,7 +1341,7 @@ tech_agri_consortium = {
 		}
 		modifier = {
 			factor = 1.25
-			has_non_swapped_tradition = tr_prosperity_adopt
+			has_active_tradition = tr_prosperity_adopt
 		}
 		
 		modifier = {	
@@ -1397,7 +1391,7 @@ tech_mining_consortium = {
 		}
 		modifier = {
 			factor = 1.25
-			has_non_swapped_tradition = tr_prosperity_adopt
+			has_active_tradition = tr_prosperity_adopt
 		}
 		
 		modifier = {	
@@ -1558,14 +1552,14 @@ tech_atm_purifying = {
 		modifier = {
 			factor = 0
 			NOT = {
-				has_non_swapped_tradition = tr_harmony_mind_and_body
+				has_active_tradition = tr_harmony_mind_and_body
 			}
 		}		
 		
 		modifier = {
 			factor = 0.5
 			has_ascension_perk = ap_world_shaper
-			has_non_swapped_tradition = tr_harmony_mind_and_body
+			has_active_tradition = tr_harmony_mind_and_body
 		}
 
 		modifier = {
@@ -1617,13 +1611,13 @@ tech_terraform_uninhabit_molten = {
 		modifier = {
 			factor = 0
 			NOT = {
-				has_non_swapped_tradition = tr_harmony_mind_and_body
+				has_active_tradition = tr_harmony_mind_and_body
 			}
 		}		
 		
 		modifier = {
 			factor = 0.5
-			has_non_swapped_tradition = tr_harmony_mind_and_body
+			has_active_tradition = tr_harmony_mind_and_body
 		}			
 		
 
@@ -1674,14 +1668,14 @@ tech_terraform_uninhabit_frozen = {
 		modifier = {
 			factor = 0
 			NOT = {
-				has_non_swapped_tradition = tr_harmony_mind_and_body
+				has_active_tradition = tr_harmony_mind_and_body
 			}
 		}		
 		
 		modifier = {
 			factor = 0.5
 			has_ascension_perk = ap_world_shaper
-			has_non_swapped_tradition = tr_harmony_mind_and_body
+			has_active_tradition = tr_harmony_mind_and_body
 		}				
 		
 

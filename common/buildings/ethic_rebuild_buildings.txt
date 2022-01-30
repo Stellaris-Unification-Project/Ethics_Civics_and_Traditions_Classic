@@ -8,7 +8,7 @@ building_visitor_center = {
 	
 	potential = {
 		exists = owner
-		owner = { has_non_swapped_tradition = tr_diplomacy_alien_tourism }
+		owner = { has_active_tradition = tr_diplomacy_alien_tourism }
 		not = { owner = { has_ethic = ethic_fanatic_xenophobe } }
 		NOT = { has_modifier = slave_colony }
 	}
@@ -65,7 +65,7 @@ building_biofuel_plant = {
 	category = manufacturing
 	
 	potential = {
-	    owner = { has_non_swapped_tradition = tr_harmony_kinship }
+	    owner = { has_active_tradition = tr_harmony_kinship }
 		NOT = { has_modifier = resort_colony }	
 		NOT = { has_modifier = slave_colony }
 	}
@@ -95,7 +95,7 @@ building_biofuel_plant = {
 		weight = 2
 		modifier = {
 			factor = 0
-			count_owned_pops = { 
+			count_owned_pop = { 
 				limit = { 
 					OR = { 
 						is_unemployed = yes 
@@ -330,9 +330,9 @@ building_thermal_borehole = {
 	category = resource
 	
 	potential = {
-		owner = { has_non_swapped_tradition = tr_cybernetic_space_engineering }	
+		owner = { has_active_tradition = tr_cybernetic_space_engineering }	
 		NOT = { has_modifier = resort_colony }
-		NOR = { is_planet_class = pc_habitat  is_planet_class = pc_ringworld_habitable }
+		is_artificial = no
 		NOT = { has_modifier = slave_colony }		
 	}
 	
@@ -378,7 +378,7 @@ building_thermal_borehole = {
 		# No one to work it
 		modifier = {
 			factor = 0
-			count_owned_pops = { 
+			count_owned_pop = { 
 				limit = { 
 					OR = { 
 						is_unemployed = yes 
@@ -410,7 +410,7 @@ building_temple = {
 	
 	potential = {
 		exists = owner
-		owner = { OR = { is_spiritualist = yes  has_non_swapped_tradition = tr_ascension_adopt } }
+		owner = { OR = { is_spiritualist = yes  has_active_tradition = tr_ascension_adopt } }
 		NOT = { has_modifier = slave_colony }
 		OR = {
 			owner = { is_ai = no }
@@ -420,7 +420,7 @@ building_temple = {
 	
 	destroy_trigger = {
 		exists = owner
-		owner = { NOR = { has_non_swapped_tradition = tr_ascension_adopt } }
+		owner = { NOR = { has_active_tradition = tr_ascension_adopt } }
 		OR = {
 			owner = { is_spiritualist = no }
 			has_modifier = slave_colony
@@ -487,7 +487,7 @@ building_holotemple = {
 	
 	potential = {
 		exists = owner
-		owner = { OR = { is_spiritualist = yes  has_non_swapped_tradition = tr_ascension_adopt } }
+		owner = { OR = { is_spiritualist = yes  has_active_tradition = tr_ascension_adopt } }
 		NOT = { has_modifier = slave_colony }
 	}
 	
@@ -497,7 +497,7 @@ building_holotemple = {
 	
 	destroy_trigger = {
 		exists = owner
-		owner = { NOR = { has_non_swapped_tradition = tr_ascension_adopt } }
+		owner = { NOR = { has_active_tradition = tr_ascension_adopt } }
 		OR = {
 			owner = { is_spiritualist = no }
 			has_modifier = slave_colony
@@ -562,7 +562,7 @@ building_sacred_nexus = {
 	
 	potential = {
 		exists = owner
-		owner = { OR = { is_spiritualist = yes  has_non_swapped_tradition = tr_ascension_adopt } }
+		owner = { OR = { is_spiritualist = yes  has_active_tradition = tr_ascension_adopt } }
 		NOT = { has_modifier = slave_colony }
 	}
 	
@@ -572,7 +572,7 @@ building_sacred_nexus = {
 	
 	destroy_trigger = {
 		exists = owner
-		owner = { NOR = { has_non_swapped_tradition = tr_ascension_adopt } }
+		owner = { NOR = { has_active_tradition = tr_ascension_adopt } }
 		OR = {
 			owner = { is_spiritualist = no }
 			has_modifier = slave_colony
@@ -657,7 +657,7 @@ building_citadel_of_faith = {
 	
 	potential = {
 		exists = owner
-		owner = { OR = { is_spiritualist = yes  has_non_swapped_tradition = tr_ascension_adopt } }
+		owner = { OR = { is_spiritualist = yes  has_active_tradition = tr_ascension_adopt } }
 		NOT = { has_modifier = slave_colony }
 	}
 
@@ -667,7 +667,7 @@ building_citadel_of_faith = {
 	
 	destroy_trigger = {
 		exists = owner
-		owner = { NOR = { has_non_swapped_tradition = tr_ascension_adopt } }
+		owner = { NOR = { has_active_tradition = tr_ascension_adopt } }
 		OR = {
 			owner = { is_spiritualist = no }
 			has_modifier = slave_colony
@@ -769,7 +769,7 @@ building_stronghold = {
 	triggered_planet_modifier = {
 		potential = {
 			owner = { is_gestalt = no }
-			owner = { has_non_swapped_tradition = tr_commerce_consumerism }
+			owner = { has_active_tradition = tr_commerce_consumerism }
 		}
 		modifier = {
 			job_mercenary_add = 1
@@ -822,7 +822,7 @@ building_stronghold = {
 		weight = 0.5
 		modifier = {
 			factor = 0
-			count_owned_pops = { 
+			count_owned_pop = { 
 				limit = { 
 					OR = { 
 						is_unemployed = yes 
@@ -863,7 +863,7 @@ building_fortress = {
 	triggered_planet_modifier = {
 		potential = {
 			owner = { is_gestalt = no }
-			owner = { has_non_swapped_tradition = tr_commerce_consumerism }
+			owner = { has_active_tradition = tr_commerce_consumerism }
 		}
 		modifier = {
 			job_mercenary_add = 2
@@ -914,7 +914,7 @@ building_fortress = {
 		weight = 0.5
 		modifier = {
 			factor = 0
-			count_owned_pops = { 
+			count_owned_pop = { 
 				limit = { 
 					OR = { 
 						is_unemployed = yes 
@@ -1351,7 +1351,7 @@ building_clinic = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_non_swapped_tradition = tr_commonwealth_healthcare }
+			owner = { has_active_tradition = tr_commonwealth_healthcare }
 		}
 		modifier = {
 		job_healthcare_add = 1
@@ -1361,7 +1361,7 @@ building_clinic = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_non_swapped_tradition = tr_commerce_healthcare }
+			owner = { has_active_tradition = tr_commerce_healthcare }
 		}
 		modifier = {
 		trade_value_add = 5
@@ -1446,7 +1446,7 @@ building_hospital = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_non_swapped_tradition = tr_commonwealth_healthcare }
+			owner = { has_active_tradition = tr_commonwealth_healthcare }
 		}
 		modifier = {
 		job_healthcare_add = 2
@@ -1456,7 +1456,7 @@ building_hospital = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_non_swapped_tradition = tr_commerce_healthcare }
+			owner = { has_active_tradition = tr_commerce_healthcare }
 		}
 		modifier = {
 		trade_value_add = 8
@@ -1592,7 +1592,7 @@ building_capital = {
 		potential = {
 			exists = owner
 			owner = {
-				has_non_swapped_tradition = tr_anarchy_efficient_bureaucracy
+				has_active_tradition = tr_anarchy_efficient_bureaucracy
 			}					
 		}
 		modifier = {
@@ -1605,7 +1605,7 @@ building_capital = {
 		potential = {
 			exists = owner
 			owner = {
-				has_non_swapped_tradition = tr_domination_imperious_architecture
+				has_active_tradition = tr_domination_imperious_architecture
 			}					
 		}
 		modifier = {
@@ -1730,7 +1730,7 @@ building_capital = {
 
 		upkeep = {
 			trigger = {
-				owner = { has_non_swapped_tradition = tr_anarchy_efficient_bureaucracy }
+				owner = { has_active_tradition = tr_anarchy_efficient_bureaucracy }
 			}		
 			energy = 2
 		}			
@@ -1904,7 +1904,7 @@ building_major_capital = {
 		potential = {
 			exists = owner
 			owner = {
-				has_non_swapped_tradition = tr_anarchy_efficient_bureaucracy
+				has_active_tradition = tr_anarchy_efficient_bureaucracy
 			}					
 		}
 		modifier = {
@@ -1917,7 +1917,7 @@ building_major_capital = {
 		potential = {
 			exists = owner
 			owner = {
-				has_non_swapped_tradition = tr_domination_imperious_architecture
+				has_active_tradition = tr_domination_imperious_architecture
 			}					
 		}
 		modifier = {
@@ -2040,7 +2040,7 @@ building_major_capital = {
 		}	
 		upkeep = {
 			trigger = {
-				owner = { has_non_swapped_tradition = tr_anarchy_efficient_bureaucracy }
+				owner = { has_active_tradition = tr_anarchy_efficient_bureaucracy }
 			}		
 			energy = 4
 		}			
@@ -2216,7 +2216,7 @@ building_system_capital = {
 		potential = {
 			exists = owner
 			owner = {
-				has_non_swapped_tradition = tr_anarchy_efficient_bureaucracy
+				has_active_tradition = tr_anarchy_efficient_bureaucracy
 			}					
 		}
 		modifier = {
@@ -2229,7 +2229,7 @@ building_system_capital = {
 		potential = {
 			exists = owner
 			owner = {
-				has_non_swapped_tradition = tr_domination_imperious_architecture
+				has_active_tradition = tr_domination_imperious_architecture
 			}					
 		}
 		modifier = {
@@ -2354,7 +2354,7 @@ building_system_capital = {
 		}	
 		upkeep = {
 			trigger = {
-				owner = { has_non_swapped_tradition = tr_anarchy_efficient_bureaucracy }
+				owner = { has_active_tradition = tr_anarchy_efficient_bureaucracy }
 			}		
 			energy = 9
 		}			
@@ -2917,8 +2917,10 @@ building_galactic_stock_exchange = {
 	category = trade
 	
 	potential = {
-		NOT = { has_modifier = resort_colony }	
-		NOT = { has_modifier = slave_colony }
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
 	}
 	
 	allow = {
@@ -2935,7 +2937,7 @@ building_galactic_stock_exchange = {
 			exists = owner
 			owner = { 
 				OR = {
-					has_non_swapped_tradition = tr_commerce_profit
+					has_active_tradition = tr_commerce_profit
 				}
 			}					
 		}
@@ -3014,8 +3016,10 @@ building_paradise_dome = {
 	category = amenity
 	
 	potential = {
-		NOT = { is_planet_class = pc_habitat }
-		NOT = { has_modifier = slave_colony }
+		NOR = {
+			is_planet_class = pc_habitat
+			has_modifier = slave_colony
+		}
 		owner = { 
 			is_regular_empire = yes
 			NOT = { has_valid_civic = civic_shared_burden }
@@ -3041,7 +3045,7 @@ building_paradise_dome = {
 		potential = {
 			exists = owner
 			owner = {
-				has_non_swapped_tradition = tr_domination_imperious_architecture
+				has_active_tradition = tr_domination_imperious_architecture
 			}					
 		}
 		modifier = {

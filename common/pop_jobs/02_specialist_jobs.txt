@@ -81,7 +81,7 @@ colonist = {
 			NOT = { has_job = colonist }
 			planet = {
 				owner = { is_ai = yes }
-				count_pops = { limit = { is_sapient = yes }count < 4 }
+				count_owned_pop = { limit = { is_sapient = yes }count < 4 }
 				any_owned_pop = {
 					has_job = colonist
 				}
@@ -450,9 +450,10 @@ foundry = {
 		is_being_assimilated = no
 	}
 	
+	possible_precalc = can_fill_specialist_job
+	
 	possible = {
-		specialist_job_check_trigger = yes
-	}
+		}
 	
 	resources = {
 		category = planet_metallurgists
@@ -796,9 +797,10 @@ telepath = {
 		is_being_assimilated = no
 	}
 	
+	possible_precalc = can_fill_specialist_job
+	
 	possible = {
-		specialist_job_check_trigger = yes
-	}
+		}
 	
 	resources = {
 		category = planet_telepaths
@@ -919,9 +921,10 @@ artisan = {
 		is_being_assimilated = no
 	}
 	
+	possible_precalc = can_fill_specialist_job
+	
 	possible = {
-		specialist_job_check_trigger = yes
-	}
+		}
 	
 	resources = {
 		category = planet_artisans
@@ -1213,9 +1216,10 @@ chemist = {
 		is_being_assimilated = no
 	}
 	
+	possible_precalc = can_fill_specialist_job
+	
 	possible = {
-		specialist_job_check_trigger = yes
-	}
+		}
 	
 	resources = {
 		category = planet_chemists
@@ -1284,9 +1288,10 @@ translucer = {
 		is_being_assimilated = no
 	}
 	
+	possible_precalc = can_fill_specialist_job
+	
 	possible = {
-		specialist_job_check_trigger = yes
-	}
+		}
 	
 	resources = {
 		category = planet_translucers
@@ -1361,9 +1366,10 @@ gas_refiner = {
 		is_being_assimilated = no
 	}
 	
+	possible_precalc = can_fill_specialist_job
+	
 	possible = {
-		specialist_job_check_trigger = yes
-	}
+		}
 	
 	resources = {
 		category = planet_refiners
@@ -1431,9 +1437,10 @@ roboticist = {
 	building_icon = building_robot_assembly_plant
 	clothes_texture_index = 3
 		
+	possible_precalc = can_fill_specialist_job
+		
 	possible = {
-		specialist_job_check_trigger = yes
-	}
+		}
 	
 	possible_pre_triggers = {
 		has_owner = yes
@@ -1471,9 +1478,10 @@ healthcare = {
 		is_being_assimilated = no
 	}
 	
+	possible_precalc = can_fill_specialist_job
+	
 	possible = {
-		specialist_job_check_trigger = yes
-	}
+		}
 	
 	planet_modifier = {
 		planet_amenities_add = 5
@@ -1496,7 +1504,7 @@ healthcare = {
 		}			
 		produces = {
 			trigger = {
-				owner = { has_non_swapped_tradition = tr_commonwealth_healthcare }
+				owner = { has_active_tradition = tr_commonwealth_healthcare }
 			}
 			unity = 1
 		}
@@ -1516,7 +1524,7 @@ healthcare = {
 	triggered_planet_modifier = {
 		potential = {
 		    exists = owner
-			owner = { has_non_swapped_tradition = tr_commonwealth_healthcare }
+			owner = { has_active_tradition = tr_commonwealth_healthcare }
 		}
 		modifier = {
 			planet_amenities_add = 1
@@ -1610,9 +1618,10 @@ manager = {
 		is_being_assimilated = no
 	}
 	
+	possible_precalc = can_fill_specialist_job
+	
 	possible = {
-		specialist_job_check_trigger = yes
-	}
+		}
 
 	planet_modifier = {
 		trade_value_add = 2

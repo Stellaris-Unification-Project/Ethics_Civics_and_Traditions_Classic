@@ -108,10 +108,7 @@ labourites = {
 			exists = owner
 			owner = {
 					has_policy_flag = slavery_allowed
-				NOR = {
-					has_ethic = ethic_xenophobe
-					has_ethic = ethic_fanatic_xenophobe
-				}					
+				is_xenophobe = no					
 			}
 		}
 

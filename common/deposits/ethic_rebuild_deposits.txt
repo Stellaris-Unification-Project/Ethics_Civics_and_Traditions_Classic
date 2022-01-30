@@ -31,7 +31,7 @@
 
 
 d_rushing_waterfalls = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
 	
 	use_weights_for_terraforming_swap_types = yes
@@ -50,7 +50,7 @@ d_rushing_waterfalls = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_non_swapped_tradition = tr_harmony_bulwark_of_harmony }
+			owner = { has_active_tradition = tr_harmony_bulwark_of_harmony }
 		}
 		modifier = {
 			planet_housing_add = 1
@@ -75,7 +75,7 @@ d_rushing_waterfalls = {
 
 
 d_bountiful_plains = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
 	
 	category = deposit_cat_food
@@ -98,7 +98,7 @@ d_bountiful_plains = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_non_swapped_tradition = tr_harmony_bulwark_of_harmony }
+			owner = { has_active_tradition = tr_harmony_bulwark_of_harmony }
 		}
 		modifier = {
 			planet_housing_add = 2
@@ -120,7 +120,7 @@ d_bountiful_plains = {
 }
 
 d_rugged_woods = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
 	
 	category = deposit_cat_food
@@ -136,7 +136,7 @@ d_rugged_woods = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_non_swapped_tradition = tr_harmony_bulwark_of_harmony }
+			owner = { has_active_tradition = tr_harmony_bulwark_of_harmony }
 		}
 		modifier = {
 			planet_housing_add = 1
@@ -154,7 +154,7 @@ d_rugged_woods = {
 }
 
 d_green_hills = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
 	
 	category = deposit_cat_food
@@ -177,7 +177,7 @@ d_green_hills = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_non_swapped_tradition = tr_harmony_bulwark_of_harmony }
+			owner = { has_active_tradition = tr_harmony_bulwark_of_harmony }
 		}
 		modifier = {
 			planet_housing_add = 2
@@ -203,7 +203,7 @@ d_green_hills = {
 
 
 d_fungal_caves = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
 	
 	category = deposit_cat_food
@@ -223,7 +223,7 @@ d_fungal_caves = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_non_swapped_tradition = tr_harmony_bulwark_of_harmony }
+			owner = { has_active_tradition = tr_harmony_bulwark_of_harmony }
 		}
 		modifier = {
 			planet_housing_add = 1
@@ -252,7 +252,7 @@ d_fungal_caves = {
 }
 
 d_lush_jungle = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
 	
 	category = deposit_cat_food
@@ -272,7 +272,7 @@ d_lush_jungle = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_non_swapped_tradition = tr_harmony_bulwark_of_harmony }
+			owner = { has_active_tradition = tr_harmony_bulwark_of_harmony }
 		}
 		modifier = {
 			planet_housing_add = 2
@@ -298,7 +298,7 @@ d_lush_jungle = {
 }
 
 d_fertile_lands = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
 	
 	category = deposit_cat_food
@@ -318,7 +318,7 @@ d_fertile_lands = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_non_swapped_tradition = tr_harmony_bulwark_of_harmony }
+			owner = { has_active_tradition = tr_harmony_bulwark_of_harmony }
 		}
 		modifier = {
 			planet_housing_add = 3
@@ -345,7 +345,7 @@ d_fertile_lands = {
 }
 
 d_great_river = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
 	
 	category = deposit_cat_food
@@ -365,7 +365,7 @@ d_great_river = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_non_swapped_tradition = tr_harmony_bulwark_of_harmony }
+			owner = { has_active_tradition = tr_harmony_bulwark_of_harmony }
 		}
 		modifier = {
 			planet_housing_add = 2
@@ -391,7 +391,7 @@ d_great_river = {
 
 
 d_marvelous_oasis = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
 	
 	category = deposit_cat_food
@@ -412,7 +412,7 @@ d_marvelous_oasis = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_non_swapped_tradition = tr_harmony_bulwark_of_harmony }
+			owner = { has_active_tradition = tr_harmony_bulwark_of_harmony }
 		}
 		modifier = {
 			planet_housing_add = 2
@@ -437,7 +437,7 @@ d_marvelous_oasis = {
 }
 
 d_tropical_island = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
 	
 	category = deposit_cat_food
@@ -458,7 +458,7 @@ d_tropical_island = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_non_swapped_tradition = tr_harmony_bulwark_of_harmony }
+			owner = { has_active_tradition = tr_harmony_bulwark_of_harmony }
 		}
 		modifier = {
 			planet_housing_add = 2
@@ -484,7 +484,7 @@ d_tropical_island = {
 }
 
 d_fungal_forest = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
 	
 	use_weights_for_terraforming_swap_types = yes
@@ -505,7 +505,7 @@ d_fungal_forest = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_non_swapped_tradition = tr_harmony_bulwark_of_harmony }
+			owner = { has_active_tradition = tr_harmony_bulwark_of_harmony }
 		}
 		modifier = {
 			planet_housing_add = 2
@@ -527,7 +527,7 @@ d_fungal_forest = {
 
 
 d_crystal_forest = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_rare
 	
 	use_weights_for_terraforming_swap_types = yes
@@ -543,7 +543,7 @@ d_crystal_forest = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_non_swapped_tradition = tr_harmony_bulwark_of_harmony }
+			owner = { has_active_tradition = tr_harmony_bulwark_of_harmony }
 		}
 		modifier = {
 			planet_housing_add = 2
@@ -587,7 +587,7 @@ d_crystal_forest = {
 
 
 d_hyperfertile_valley = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_rare
 	
 	icon = d_alien_pets_deposit
@@ -599,7 +599,7 @@ d_hyperfertile_valley = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_non_swapped_tradition = tr_harmony_bulwark_of_harmony }
+			owner = { has_active_tradition = tr_harmony_bulwark_of_harmony }
 		}
 		modifier = {
 		    planet_housing_add = 1
@@ -614,7 +614,7 @@ d_hyperfertile_valley = {
 
 
 d_savage_wildlands = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_rare
 	
 	icon = d_dangerous_wildlife_blocker
@@ -626,7 +626,7 @@ d_savage_wildlands = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_non_swapped_tradition = tr_harmony_bulwark_of_harmony }
+			owner = { has_active_tradition = tr_harmony_bulwark_of_harmony }
 		}
 		modifier = {
 		    planet_housing_add = 1
@@ -672,7 +672,7 @@ d_savage_wildlands = {
 
 
 d_alien_pets_deposit = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_rare
 	
 	potential = {
@@ -725,7 +725,7 @@ d_alien_pets_deposit = {
 
 
 d_migrating_forests = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_rare
 	
 	icon = d_huge_tree
@@ -766,7 +766,7 @@ d_migrating_forests = {
 }
 
 d_migrating_forest_reserve = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_rare
 	
 	icon = d_huge_tree
@@ -836,7 +836,7 @@ d_migrating_forest_reserve = {
 d_wandering_forests = {
 	icon = d_dense_jungle 
 	
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_blockers	
 	
 	potential = {
@@ -876,7 +876,7 @@ d_wandering_forests = {
 
 d_titanic_life_blocker = {	#Added via event
 
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_rare
 	
 	potential = { always = no }
@@ -921,7 +921,7 @@ d_titanic_life_blocker = {	#Added via event
 d_dangerous_wildlife_blocker = {	
 	time = 270
 	
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_blockers	
 	
 	resources = {
@@ -1009,7 +1009,7 @@ d_dangerous_wildlife_blocker = {
 d_mountain_range = {	
 	time = 270
 	
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_blockers
 	
 	resources = {
@@ -1105,7 +1105,7 @@ d_mountain_range = {
 d_active_volcano = {
 	time = 270
 	
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_blockers	
 	
 	resources = {
@@ -1198,7 +1198,7 @@ d_active_volcano = {
 d_dense_jungle = {
 	time = 180
 	
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_blockers	
 	
 	resources = {
@@ -1290,7 +1290,7 @@ d_dense_jungle = {
 d_toxic_kelp = {	
 	time = 180
 	
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_blockers	
 	
 	resources = {
@@ -1368,7 +1368,7 @@ d_toxic_kelp = {
 d_deep_sinkhole = {
 	time = 180
 	
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_blockers	
 	
 	resources = {
@@ -1460,7 +1460,7 @@ d_deep_sinkhole = {
 d_quicksand_basin = {	
 	time = 180
 	
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_blockers	
 	
 	resources = {
@@ -1548,7 +1548,7 @@ d_quicksand_basin = {
 d_noxious_swamp = {
 	time = 180
 	
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_blockers	
 	
 	resources = {
@@ -1637,7 +1637,7 @@ d_noxious_swamp = {
 d_massive_glacier = {	
 	time = 180
 	
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	category = deposit_cat_blockers	
 	
 	resources = {

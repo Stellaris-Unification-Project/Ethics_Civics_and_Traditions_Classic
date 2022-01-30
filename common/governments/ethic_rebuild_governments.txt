@@ -91,11 +91,7 @@ gov_liberal_democracy = {
 		has_ethic = ethic_capitalism
 		has_ethic = ethic_fanatic_capitalism
 		}
-		
-	    OR = {
-		has_ethic = ethic_egalitarian
-		has_ethic = ethic_fanatic_egalitarian
-		}		
+	is_egalitarian = yes		
 		
 		NOR = {	
 		has_ethic = ethic_fanatic_elitist
@@ -482,10 +478,7 @@ gov_enlighted_socialism = {
 		has_ethic = ethic_pluralist
 		}	
 
-		NOR = {	
-		has_ethic = ethic_fanatic_authoritarian
-		has_ethic = ethic_authoritarian
-		}			
+		is_authoritarian = no			
 
 		has_authority = auth_imperial
 
@@ -597,13 +590,10 @@ gov_genuine_aristocracy = {
 
 	possible = {
 		
-		NOR = {	
-		has_ethic = ethic_fanatic_socialism
+		NOR = {
+			has_ethic = ethic_fanatic_socialism
 		has_ethic = ethic_fanatic_capitalism
-		}		
-		
-		NOR = {	
-		has_ethic = ethic_elitist
+			has_ethic = ethic_elitist
 		has_ethic = ethic_fanatic_elitist
 		}			
 		
@@ -716,19 +706,14 @@ gov_jingoism = {
 	possible = {
 		
 		OR = {	
-		has_ethic = ethic_xenophobe	
-		has_ethic = ethic_fanatic_xenophobe	
+		is_xenophobe = yes	
 		}	
 		
 		OR = {	
-		has_ethic = ethic_militarist
-		has_ethic = ethic_fanatic_militarist
+		is_militarist = yes
 		}	
 
-		NOR = {	
-		has_ethic = ethic_egalitarian
-		has_ethic = ethic_fanatic_egalitarian
-		}	
+		is_egalitarian = no	
 
 		NOR = {	
 		has_ethic = ethic_socialism
@@ -781,10 +766,7 @@ gov_national_socialism = {
 
 	possible = {
 		
-		NOR = {	
-		has_ethic = ethic_xenophile
-		has_ethic = ethic_fanatic_xenophile
-		}	
+		is_xenophile = no	
 		
 		OR = {	
 		has_ethic = ethic_elitist		
@@ -795,10 +777,7 @@ gov_national_socialism = {
 		has_ethic = ethic_fanatic_authoritarian
 		}		
 		
-		NOR = {	
-		has_ethic = ethic_pacifist
-		has_ethic = ethic_fanatic_pacifist
-		}	
+		is_pacifist = no	
 
 		OR = {	
 		has_ethic = ethic_socialism
@@ -904,8 +883,7 @@ gov_anarchy_state = {
 		has_authority = auth_direct_democratic
 		has_ethic = ethic_fanatic_socialism	
 		or = {
-		    has_ethic = ethic_egalitarian
-			has_ethic = ethic_fanatic_egalitarian
+		    is_egalitarian = yes
 			}		
 		
 	}
@@ -937,8 +915,7 @@ gov_communist_dictatorship = {
         has_ethic = ethic_fanatic_socialism
 
 		OR = {	
-		has_ethic = ethic_authoritarian
-		has_ethic = ethic_fanatic_authoritarian		
+		is_authoritarian = yes		
 		}			
 		NOR = {	
 		has_ethic = ethic_elitist
@@ -974,13 +951,11 @@ gov_anarchy_communism = {
         has_ethic = ethic_fanatic_socialism
 
 		OR = {	
-		has_ethic = ethic_authoritarian
-		has_ethic = ethic_fanatic_authoritarian		
+		is_authoritarian = yes		
 		}		
 
 		OR = {	
-		has_ethic = ethic_militarist
-		has_ethic = ethic_fanatic_militarist	
+		is_militarist = yes	
 		}
 		
 		NOR = {	
@@ -1052,8 +1027,7 @@ gov_minarchy = {
 	   has_ethic = ethic_fanatic_capitalism	
 	   
 	  OR = { 
-	    has_ethic = ethic_egalitarian	
-        has_ethic = ethic_fanatic_egalitarian
+	    is_egalitarian = yes
        }
 
      NOR = { has_authority = auth_corporate }	   

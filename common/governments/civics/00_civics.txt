@@ -481,12 +481,9 @@ civic_political_pluralism = {
 		ethics = {
 			
 			NOR = {
-			    text = civic_tooltip_not_authoritarian
+				text = civic_tooltip_not_authoritarian
 			    value = ethic_authoritarian
 				value = ethic_fanatic_authoritarian
-			}	
-
-			NOR = {
 				value = ethic_fanatic_elitist
 			}				
 		}
@@ -2111,8 +2108,6 @@ civic_shared_burden = {
 				text = civic_tooltip_not_elitist
 				value = ethic_elitist
 				value = ethic_fanatic_elitist
-			}	
-			NOR = {
 				text = civic_tooltip_not_authoritarian
 				value = ethic_authoritarian
 				value = ethic_fanatic_authoritarian
